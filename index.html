@@ -1,106 +1,144 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">description-1</p>
+    <header id="title">
+        <h1>Volleyball Tryout Form</h1>
+        <!--<p id="description">description-1</p>-->
     </header>
     <section>
-        <div>
-            <div>
-                <p>
-                    description-2
-                </p>
+        <div class="container">
+            <div class="description">
+                <p id="description">Fill this out as best as you can</p>
             </div>
             
             <form id="survey-form">
                 <!-- name -->
                 <div class="form-group">
-                    <label id="name-label" for="name">Name</label>
-                    <input type="text"
-                           name="name"
-                           id="name"
-                           class="form-control"
-                           placeholder="Enter your name"
-                           required />
+                    <div class="label-group">
+                        <label id="name-label" for="name">Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text"
+                               name="name"
+                               id="name"
+                               class="form-control"
+                               placeholder="Enter your name"
+                               required />
+                    </div>
                 </div>
                 <!-- email -->
                 <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input type="text"
-                           name="email"
-                           id="email"
-                           class="form-control"
-                           placeholder="Enter your email"
-                           required />
+                    <div class="label-group">
+                        <label id="email-label" for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text"
+                               name="email"
+                               id="email"
+                               class="form-control"
+                               placeholder="Enter your email"
+                               required />
+                    </div>
                 </div>
 
                 <!-- age -->
                 <div class="form-group">
-                    <label id="number-label" for="age">Age</label>
-                    <input type="number"
-                           name="age"
-                           id="age"
-                           class="form-control"
-                           placeholder="Enter your age"
-                           required />
+                    <div class="label-group">
+                        <label id="number-label" for="age">Age</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number"
+                               name="age"
+                               id="age"
+                               class="form-control"
+                               placeholder="Enter your age"
+                               required />
+                    </div>
                 </div>
 
                 <!-- role -->
                 <div class="form-group">
-                    <p>Which position do you play?</p>
-                    <select id="dropdown" name="position" class="form-control" required>
-                        <option disabled selected value>Select position that fits you most</option>
-                        <option value="outside">Outside Hitter</option>
-                        <option value="opposite">Opposite Hitter</option>
-                        <option value="middle">Middle Blocker</option>
-                        <option value="setter">Setter</option>
-                        <option value="ds">Defensive Specialist</option>
-                        <option value="libero">Libero</option>
-                    </select>
+                    <div class="label-group">
+                        <label>Which position do you play?</label>
+                    </div>
+                    <div class="selection">
+                        <select id="dropdown" name="position" class="form-control" required>
+                            <option disabled selected>Select a position that fits you most</option>
+                            <option value="outside">Outside Hitter</option>
+                            <option value="opposite">Opposite Hitter</option>
+                            <option value="middle">Middle Blocker</option>
+                            <option value="setter">Setter</option>
+                            <option value="ds">Defensive Specialist</option>
+                            <option value="libero">Libero</option>
+                        </select>
+                    </div>
                 </div>
                 <!-- radio button option -->
                 <div class="form-group">
-                    <p>How many years of experience do you have?</p>
-                    <input type="radio" value="No experience" />
-                    <label>No experience</label>
+                    <div class="label-group">
+                        <label>How many years of experience do you have?</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="radio" value="No experience" />
+                        <label>No experience</label>
 
-                    <input type="radio" value="0-2 years" />
-                    <label>0-2 years</label>
+                        <input type="radio" value="0-2 years" />
+                        <label>0-2 years</label>
 
-                    <input type="radio" value="3-4 years" />
-                    <label>3-4 years</label>
+                        <input type="radio" value="3-4 years" />
+                        <label>3-4 years</label>
 
-                    <input type="radio" value="more than 4 years" />
-                    <label>more than 4 years</label>
+                        <input type="radio" value="more than 4 years" />
+                        <label>more than 4 years</label>
+                    </div>
                 </div>
 
                 <!-- checkboxes -->
                 <div class="form-group">
-                    <p>What other position would you like to play?</p>
-                    <input type="checkbox" value="outside" />
-                    <label>Outside Hitter</label>
+                    <div class="label-group">
+                        <label>What other position would you like to play?</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" value="outside" />
+                        <label>Outside Hitter</label>
 
-                    <input type="checkbox" value="opposite" />
-                    <label>Opposite Hitter</label>
+                        <input type="checkbox" value="opposite" />
+                        <label>Opposite Hitter</label>
 
-                    <input type="checkbox" value="middle" />
-                    <label>Middle Blocker</label>
+                        <input type="checkbox" value="middle" />
+                        <label>Middle Blocker</label>
 
-                    <input type="checkbox" value="setter" />
-                    <label>Setter</label>
+                        <input type="checkbox" value="setter" />
+                        <label>Setter</label>
 
-                    <input type="checkbox" value="ds" />
-                    <label>Defensive Specialist</label>
+                        <input type="checkbox" value="ds" />
+                        <label>Defensive Specialist</label>
 
-                    <input type="checkbox" value="libero" />
-                    <label>Libero</label>
+                        <input type="checkbox" value="libero" />
+                        <label>Libero</label>
+                    </div>
+                </div>
+                <!-- comments box -->
+                <div class="row-group">
+                    <div class="label-group">
+                        <label for="comments">
+                            Any athletic limitations the school needs to be notified of:
+                        </label>
+                    </div>
+
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="i.e. Sickle Cell Anaemia, Asthma, etc."></textarea>
                 </div>
 
-
+                <!-- submit button -->
+                <div class="submit">
+                    <button type="button">
+                        Submit
+                    </button>
+                </div>
             </form>
 
         </div>
