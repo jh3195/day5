@@ -1,0 +1,52 @@
+﻿body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(200, 150, 0);
+    color: black;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#survey-form {
+    text-align: center;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+.form-group {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.label-group {
+    display: inline-block;
+    text-align: right;
+    width: 44%
+}
+
+.input-group {
+    display: inline-block;
+    text-align: left;
+    width: 54%;
+}
+
+.selection {
+    display: inline-block;
+    text-align: left;
+    width: 54%;
+}
