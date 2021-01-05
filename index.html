@@ -68,12 +68,12 @@
                     <div class="selection">
                         <select id="dropdown" name="position" class="form-control" required>
                             <option disabled selected>Select a position that fits you most</option>
-                            <option value="outside">Outside Hitter</option>
-                            <option value="opposite">Opposite Hitter</option>
-                            <option value="middle">Middle Blocker</option>
-                            <option value="setter">Setter</option>
-                            <option value="ds">Defensive Specialist</option>
-                            <option value="libero">Libero</option>
+                            <option value="outside">Outside Hitter (OH)</option>
+                            <option value="opposite">Opposite Hitter (OPP)</option>
+                            <option value="middle">Middle Blocker (MB)</option>
+                            <option value="setter">Setter (S)</option>
+                            <option value="ds">Defensive Specialist (DS)</option>
+                            <option value="libero">Libero (Li)</option>
                         </select>
                     </div>
                 </div>
@@ -84,16 +84,16 @@
                     </div>
                     <div class="input-group">
                         <input type="radio" value="No experience" />
-                        <label>No experience</label>
+                        <label>No experience<br /></label>
 
                         <input type="radio" value="0-2 years" />
-                        <label>0-2 years</label>
+                        <label>0-2 years<br /></label>
 
                         <input type="radio" value="3-4 years" />
-                        <label>3-4 years</label>
+                        <label>3-4 years<br /></label>
 
                         <input type="radio" value="more than 4 years" />
-                        <label>more than 4 years</label>
+                        <label>more than 4 years<br /></label>
                     </div>
                 </div>
 
@@ -104,33 +104,34 @@
                     </div>
                     <div class="input-group">
                         <input type="checkbox" value="outside" />
-                        <label>Outside Hitter</label>
+                        <label>Outside Hitter (OH)<br/></label>
 
                         <input type="checkbox" value="opposite" />
-                        <label>Opposite Hitter</label>
+                        <label>Opposite Hitter (OPP)<br/></label>
 
                         <input type="checkbox" value="middle" />
-                        <label>Middle Blocker</label>
+                        <label>Middle Blocker (MB)<br/></label>
 
                         <input type="checkbox" value="setter" />
-                        <label>Setter</label>
+                        <label>Setter (S)<br /></label>
 
                         <input type="checkbox" value="ds" />
-                        <label>Defensive Specialist</label>
+                        <label>Defensive Specialist (DS)<br /></label>
 
                         <input type="checkbox" value="libero" />
-                        <label>Libero</label>
+                        <label>Libero (Li)</label>
                     </div>
                 </div>
                 <!-- comments box -->
                 <div class="row-group">
                     <div class="label-group">
                         <label for="comments">
-                            Any athletic limitations the school needs to be notified of:
+                            Any athletic limitations:
                         </label>
                     </div>
-
-                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="i.e. Sickle Cell Anaemia, Asthma, etc."></textarea>
+                    <div class="comment-box">
+                        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="i.e. Sickle Cell Anaemia, Asthma, etc."></textarea>
+                    </div>
                 </div>
 
                 <!-- submit button -->

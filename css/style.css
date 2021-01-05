@@ -3,13 +3,17 @@
     font-size: 16px;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(200, 150, 0);
+    background-color: black;
+    background-image: url(https://www.ncaa.com/_flysystem/public-s3/thumbnails/2019-04-15/DIII_mvol_ss.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     color: black;
 }
 
 #title {
     color: white;
     text-align: center;
+    padding: 20px;
 }
 
 #description {
@@ -18,19 +22,28 @@
 
 #survey-form {
     text-align: center;
-
+/*    padding: 20px;*/
 }
 
 .container {
-    width: 80%;
+    width: 50%;
     margin: auto;
     background-color: white;
     color: black;
+    padding: 20px;
+
 }
 
 .form-group {
     display: block;
     padding-bottom: 10px;
+    padding: 10px;
+}
+
+.row-group {
+    display: block;
+    padding-bottom: 10px;
+    padding: 20px;
 }
 
 .label-group {
@@ -46,6 +59,12 @@
 }
 
 .selection {
+    display: inline-block;
+    text-align: left;
+    width: 54%;
+}
+
+.comment-box {
     display: inline-block;
     text-align: left;
     width: 54%;
